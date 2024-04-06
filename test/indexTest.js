@@ -20,6 +20,7 @@ describe( "index.js", () => {
       expect( window.fetch, "A fetch to the API was not found" )
         .to.have.been.called.with( 'https://anapioficeandfire.com/api/books' );
     } )
+    
 
     it( "renders book titles into the DOM by passing a JSON object to renderBooks()", async () => {
       chai.spy.on( window, 'renderBooks' );
